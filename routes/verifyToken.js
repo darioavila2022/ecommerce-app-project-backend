@@ -29,7 +29,7 @@ const verifyTokenAndAdmin = (req, res, next) => {
         if (req.user.isAdmin) { //VERIFIYING THAT THE USER IS ADMIN IN ORDER TO MAKE ANY CHANGES
             next()
         } else {
-            res.status(403).json("You are not allowed to do that.")
+            res.status(403).json("You are not allowed to do that. Please contact your administrator")
         }
     })
 }
