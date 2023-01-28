@@ -6,7 +6,8 @@ const jwt = require("jsonwebtoken")
 //REGISTER USER
 router.post("/register", async (req, res) => { //ASYNC REQUEST FROM USER
     const newUser = new User ({
-        username: req.body.username,
+        // username: req.body.username,
+        // lastname: req.body.lastname,
         email: req.body.email,
         password: CryptoJS.AES.encrypt( //CRYPTOJS PROVIDES A HASHED CODE FOR PW 
             req.body.password, 
@@ -27,7 +28,7 @@ router.post("/register", async (req, res) => { //ASYNC REQUEST FROM USER
 
 router.post("/login", async (req,res) => { //POST METHOD AND LOGIN ENDPOINT
     try {
-        const user = await User.findOne({username: req.body.username}) //FINDING USER INSIDE DB
+        const user = await User.findOne({email: req.body.email}) //FINDING USER INSIDE DB
         !user && res.status(401).json("Sorry, invalid user.") //IF THERE'S NO USER FOUND, SEND THIS ERROR MESSAGE
 
         const hashedPassword = CryptoJS.AES.decrypt( //DECRYPTING PREVIOUSLY CRYPTED PW
