@@ -8,8 +8,7 @@ Proyecto creado para evaluación en contexto de aprendizaje. Cuenta con dos comp
 * [1. Demo](#1-demo)
 * [2. Instalación](#2-instalación)
 * [3. Funciones utilizadas](#3-funciones-utilizadas)
-* [4. Prototipado](#4-prototipado)
-* [5. Autores](#5-autores)
+* [4. Autores](#4-autores)
 
 ***
 
@@ -44,11 +43,7 @@ Inicialización en servidor local:
 - Operaciones CRUD en API con usuario, producto, orden y carrito de compra.
 - Verificaciones en API de usuario, producto, etc.
 
-## 4. Prototipado
-
-![Prototipado](./src/images/simple-prototype.jpg)
-
-## 5. Autores
+## 4. Autores
 
 - [Darío Ávila](https://github.com/darioavila2022)
 - [Paulina Cárcamo](https://github.com/PaulinaCarcamo)
