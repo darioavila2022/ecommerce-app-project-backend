@@ -12,12 +12,23 @@ const orderRoute = require("./routes/order")
 
 dotenv.config()
 
-mongoose
-.connect(process.env.MONGO_URL)
-    .then(() => console.log("Mongo database connected"))
-    .catch((err) => {
-        console.log(err);
+// mongoose
+// .connect(process.env.MONGO_URI)
+//     .then(() => console.log("Mongo database connected"))
+//     .catch((err) => {
+//         console.log(err);
+//     })
+
+//mongodb
+mongoose.connect(process.env.MONGO_URI,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+
     })
+    .then(() => console.log('MongoDB Connected'))
+    .catch(err => console.log(err)
+);
 
 app.use(cors())
 app.use(express.json())
