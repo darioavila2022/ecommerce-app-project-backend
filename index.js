@@ -12,25 +12,15 @@ const orderRoute = require("./routes/order")
 
 dotenv.config()
 
-// mongoose
-// .connect(process.env.MONGO_URI)
-//     .then(() => console.log("Mongo database connected"))
-//     .catch((err) => {
-//         console.log(err);
-//     })
-
-//mongodb
-mongoose.connect(process.env.MONGO_URI,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-
+mongoose
+.connect(process.env.MONGO_URI)
+    .then(() => console.log("Mongo database connected"))
+    .catch((err) => {
+        console.log(err);
     })
-    .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log(err)
-);
 
-app.use(cors())
+
+
 app.use(express.json())
 app.use("/api/auth", authRoute)
 app.use("/api/users", userRoute)
@@ -38,6 +28,6 @@ app.use("/api/products", productRoute)
 app.use("/api/carts", cartRoute)
 app.use("/api/orders", orderRoute)
 
-    app.listen(process.env.PORT || 5000, () => {
+    app.listen(5000, () => {
         console.log("Backend server running");
     })
