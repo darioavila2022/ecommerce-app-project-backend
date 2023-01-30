@@ -28,6 +28,9 @@ app.use("/api/products", productRoute)
 app.use("/api/carts", cartRoute)
 app.use("/api/orders", orderRoute)
 
-    app.listen($PORT, () => {
-        console.log("Backend server running");
-    })
+    // app.listen(`0.0.0.0:$PORT`, () => {
+    //     console.log("Backend server running");
+    // })
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
