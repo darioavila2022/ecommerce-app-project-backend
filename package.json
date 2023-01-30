@@ -4,7 +4,7 @@
   "description": "Backend section of eCommerce app test.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
