@@ -1,35 +1,8 @@
 # eCommerce MERN Fullstack Project (Backend)
 
-Proyecto creado para evaluación en contexto de aprendizaje. Cuenta con dos componentes principales: la sección de backend/api y la sección frontend/client. Ambos fueron trabajados en repositorios distintos y en deployments distintos y sus links correspondientes están adjuntos a este readme; tanto los deployments como los repos. Esta plataforma fullstack se trata de una tienda de cassettes los cuales incluyen muchos modelos y categorías distintas. La mecánica más al detalle se presentará a continuación.
+Proyecto creado con fines de aprendizaje: Este proyecto cuenta con dos componentes principales: la sección de backend/api y la sección frontend/client. Estos componentes fueron trabajados por separado y cada despliegue se llevó a cabo desde sus repositorios respectivos. Los enlaces se encuentran adjuntos a este documento de texto. Esta aplicación fullstack integra MONGO, EXPRESS, REACT Y NODEJS, a través de una tienda online. Se utiliza PayPal Sandbox para simular los pagos, se incluye autenticación, entre otros.
 
-
-## **Índice**
-
-* [1. Demo](#1-demo)
-* [2. Instalación](#2-instalación)
-* [3. Funciones utilizadas](#3-funciones-utilizadas)
-* [4. Autores](#4-autores)
-
-***
-
-## 1. Demo 
-
-[Demo](https://famous-vacherin-56ae21.netlify.app/)
-
-## 2. Instalación 
-
-Instalación de componentes:
-
-```bash
-  npm install 
-```
-Inicialización en servidor local:
-
-```bash
-  npm start
-```
-
-## 3. Funciones utilizadas (Backend)
+# Recursos utilizados
 
 - Plataforma Node.JS para desarrollo de  proyecto y tiempo de ejecución.
 - Uso de nodemon para monitoreo de servidor backend.
@@ -42,9 +15,3 @@ Inicialización en servidor local:
 - Creación de distintos tipos de rutas y endpoints.
 - Operaciones CRUD en API con usuario, producto, orden y carrito de compra.
 - Verificaciones en API de usuario, producto, etc.
-
-## 4. Autores
-
-- [Darío Ávila](https://github.com/darioavila2022)
-- [Paulina Cárcamo](https://github.com/PaulinaCarcamo)
-
