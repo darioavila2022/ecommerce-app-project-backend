@@ -12,8 +12,8 @@ const orderRoute = require("./routes/order")
 
 dotenv.config()
 
-mongoose
-.connect(process.env.MONGO_URI)
+mongoose.set("strictQuery", false);
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("Mongo database connected"))
     .catch((err) => {
         console.log(err);
