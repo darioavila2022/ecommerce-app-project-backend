@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
     })
 
     app.use((req, res, next) => {
-        res.setHeader("Access-Control-Allow-Origin", "https://ecommerce-app.up.railway.app/");
+        res.setHeader("Access-Control-Allow-Origin", "https://superb-sunburst-e0eb4e.netlify.app/");
         res.header(
           "Access-Control-Allow-Headers",
           "Origin, X-Requested-With, Content-Type, Accept"
